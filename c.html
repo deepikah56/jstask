@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id ="demo" onclick="myFunction()">red</p>
+<p id ="class" onclick="changeblue()">blue</p>
+<p id ="pic" onclick="changegreen()">green</p>
+<script>
+function myFunction(){
+	debugger
+	if(document.getElementById("demo").style.backgroundColor == "red")
+	{
+		document.getElementById("demo").style.backgroundColor = "white";
+	} else {
+		document.getElementById("demo").style.backgroundColor = "red";
+	}
+}
+function changeblue(){
+	if(document.getElementById("class").style.backgroundColor == "blue")
+	{
+		document.getElementById("class").style.backgroundColor = "white";
+	} else {
+		document.getElementById("class").style.backgroundColor = "blue";
+	}
+}
+function changegreen(){
+	if(document.getElementById("pic").style.backgroundColor == "green")
+	{
+		document.getElementById("pic").style.backgroundColor = "white";
+	} else {
+		document.getElementById("pic").style.backgroundColor = "green";
+	}
+}
+
+</script>
+</body>
+</html>
