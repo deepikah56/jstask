@@ -1,25 +1,41 @@
-<!DOCTYPE html>
-<html>
-<body>
-<form >
-<form>
-    <form name="form1">
-<p><b>Name:</b> <input TYPE="TEXT" SIZE="20" NAME="yourname">
-</p>
-<p><b>Address:</b> <input TYPE="TEXT" SIZE="30" NAME="address">
-</p>
-<p><b>Phone: </b> <input TYPE="TEXT" SIZE="15" NAME="phone">
-</p>
-<p><input TYPE="BUTTON" VALUE="Display" onClick="display();"></p>
-</form>
-  </form>
-<button onclick="myFunction()">submit</button>
-<script>
-function myFunction() {
-    alert("please fill the form");
-}
-
-</script>
-
-</body>
-</html>
+<!DOCTYPE html> 
+<html> 
+<head> 
+<tittle>form</title>
+ </head> 
+ <body> 
+ <div id="demo"> 
+ <h1>email</h1><span id="test"></span> 
+ <h1>fname</h1><span id="test1"></span>
+  <h1>lname</h1><span id="test2"></span>
+   <h1>address</h1><span id="test3"></span> 
+   </div> 
+   <div id="demoinput">
+    <input type="email" id ="email" name="email" placeholder="email">
+     <input type="text" id="fname" name="fname" placeholder="fname">
+      <input type="text" id="lname" name="lname" placeholder="lname">
+       <input type="text" id="address" name="address" placeholder="address">
+        <button type="submit" onclick='sum()'>submit</button> 
+        </div> 
+        </body>
+         </html> 
+         <script> 
+         document.getElementById("demo").style.display="none"; 
+         function sum()
+         { 
+          var email = document.getElementById("email").value; 
+          var fname = document.getElementById("fname").value; 
+          var lname = document.getElementById("lname").value; 
+          var address = document.getElementById("address").value; 
+          debugger; 
+          if( email == "" || fname == "" || lname == "" || address == "" ) 
+            { alert("please fill the form"); 
+        } else
+        { document.getElementById("test").innerHTML=email; 
+        document.getElementById("test1").innerHTML=fname;
+         document.getElementById("test2").innerHTML=lname; 
+         document.getElementById("test3").innerHTML=address; 
+         document.getElementById("demo").style.display="block"; 
+         document.getElementById("demoinput").style.display="none";
+          } 
+         } </script>
